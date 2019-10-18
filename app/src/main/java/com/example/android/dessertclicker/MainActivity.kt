@@ -172,6 +172,11 @@ class MainActivity : AppCompatActivity() {
         Timber.i("onStop Called")
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        Timber.i("onSaveInstanceState Called")
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         Timber.i("onDestroy Called")
